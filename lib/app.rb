@@ -10,5 +10,6 @@ get '/secret' do
 end
 
 get '/cat' do
-  erb(:index)
+  @cat_name = %w( Pepsi Cola Fanta).sample
+  erb(:index) 
 end
