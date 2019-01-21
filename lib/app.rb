@@ -9,7 +9,13 @@ get '/secret' do
   "This page is secret..shhhh"
 end
 
-get '/cat' do
+get '/random-cat' do
   @cat_name = %w( Pepsi Cola Fanta).sample
-  erb(:index) 
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @cat_name = params[:name]
+  erb(:index)
 end
