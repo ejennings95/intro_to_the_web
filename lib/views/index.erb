@@ -1,5 +1,5 @@
-<div style = 'border: dashed red'>
-  <img src='http://bit.ly/1eze8aE'>
+<div >
+  <img style = 'border: 5px dashed orange' src='http://bit.ly/1eze8aE'>
 </div>
 
 <% if @cat_name %>
@@ -7,7 +7,7 @@
 <% end %>
 
 <% if !@cat_name %>
-<form action="named-cat">
+<form action="named-cat" method="post">
     <input type="text" name="name">
     <input type="submit" value="Submit">
 </form>
